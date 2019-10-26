@@ -39,7 +39,7 @@ class InvoiceNotification extends Notification
                     ->subject("Invoice paid")
                     ->greeting("Hello ".explode(" ", $notifiable->name)[0])
                     ->line($this->data['body'])
-                    ->action("View Invoices", $this->data['']))
+                    ->action("View Invoices", $this->data[''])
                     ->line('Thanks for using lancers');
     }
     /**
